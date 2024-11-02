@@ -130,7 +130,15 @@ body {
     font-style: normal;
 }
 
-.card-experience ul {
+.card-experience .description-card ul{
+    padding-left: 20px;
+}
+
+.card-experience .description-card ul li {
+    padding-bottom: 8px;
+}
+
+.card-experience .icons-card ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -138,7 +146,7 @@ body {
     list-style: none;
 }
 
-.card-experience ul li {
+.card-experience .icons-card ul li {
     padding-right: 20px;
     color: var(--text-color-4);
     font-size: 0.9rem;
