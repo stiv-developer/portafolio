@@ -1,0 +1,154 @@
+:root {
+    --background-color: #0F172A;
+    --text-color-hover: #C5D1EC;
+    --text-color-1: #E2E8F0;
+    --text-color-2: #94A3B8;
+    --text-color-3: #64748B;
+    --text-color-4: #5EEAD4;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color-1);
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.main .container .retroceder a {
+    color: var(--text-color-4);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.main .container .retroceder a i {
+    padding-right: 6px;
+}
+
+/* TABLEl */
+
+table {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+table tr {
+    border: 1px solid red !important;
+    border-bottom: 1px solid red !important;
+}
+
+table tr th {
+    text-indent: initial !important;
+    color: var(--text-color-1);
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-align: left;
+}
+
+table tr td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--text-color-3);
+}
+
+table tr .title {
+    font-weight: 600;
+}
+
+table tr .year {
+    padding-right: 16px;
+    color: var(--text-color-2);
+    font-weight: 400;
+}
+
+table tr .tools-th,
+table tr .link-th,
+table tr .tools,
+table tr .link {
+    display: none;
+}
+
+.cursor-halo {
+    position: fixed !important;
+    width: 50% !important; /* Tamaño del halo */
+    height: 100% !important;
+    border-radius: 50% !important;
+    background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 80%) !important;
+    pointer-events: none !important; /* Hace que el halo no bloquee la interacción con otros elementos */
+    transform: translate(-50%, -50%) !important; /* Centra el halo en el cursor */
+    transition: transform 0.05s ease-out !important; /* Suaviza el movimiento */
+}
+
+@media only screen and (min-width: 640px) {
+
+    table tr .link-th,
+    table tr .link {
+        display:table-cell;
+
+    }
+
+    table tr .link {
+        color: var(--text-color-3);
+        font-weight: 400;
+    }
+    
+    .link a{
+        color: var(--text-color-2);
+        text-decoration: none;
+    }
+
+    .link a i {
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    table tr .tools-th,
+    table tr .tools {
+        display: table-cell;
+    }
+
+    .container{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tools ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .tools ul li {
+        background: #122B39;
+        color: var(--text-color-4);
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 8px 10px;
+        border-radius: 50px;
+        white-space: nowrap;
+        margin-right: 5px;
+    }
+    h2{
+        font-size: 3rem;
+        margin-top: 0;
+    }
+}

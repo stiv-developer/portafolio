@@ -1,0 +1,406 @@
+:root {
+    --background-color: #0F172A;
+    --text-color-hover: #C5D1EC;
+    --text-color-1: #E2E8F0;
+    --text-color-2: #94A3B8;
+    --text-color-3: #64748B;
+    --text-color-4: #5EEAD4;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color-1);
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    margin-top: 55px;
+}
+
+.header .container .nav {
+    display: none;
+}
+
+.container {
+    /* padding-top: 100px; */
+    max-width: 1340px;
+    margin: 20px;
+}
+
+.header .container h1 {
+    /* border: 1px solid red; */
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.header .container h2 {
+    /* border: 1px solid red; */
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header .container p {
+    /* border: 1px solid red; */
+    color: var(--text-color-2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header .container ul {
+    display: flex;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.header .container ul li {
+    padding-right: 20px;
+}
+
+.header .container ul li a {
+    color: var(--text-color-2);
+    font-size: 1.5rem;
+}
+
+/* MAIN */
+
+.main {
+    padding-top: 96px;
+}
+
+.main .container .about {
+    margin-bottom: 64px;
+}
+
+.main .container .about h3 {
+    font-size: 1rem;
+}
+
+.main .container .about p {
+    font-size: 1rem;
+    color: var(--text-color-2);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.625;
+}
+
+.main .container .experience h3 {
+    font-size: 1rem;
+}
+.experience{
+    margin-bottom: 50px;
+}
+
+.card-experience {
+    margin-bottom: 48px;
+}
+
+.experience .download-cv a {
+    color: var(--text-color-1);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.experience .download-cv a i{
+    padding-left: 10px;
+}
+
+
+.card-experience .date-card {
+    font-size: 0.9rem;
+    color: var(--text-color-3);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card-experience .title-card {
+    font-size: 1rem;
+    color: var(--text-color-1);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-experience .description-card {
+    font-size: 1rem;
+    color: var(--text-color-2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-experience ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.card-experience ul li {
+    padding-right: 20px;
+    color: var(--text-color-4);
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: #122B39;
+    padding: 8px 10px;
+    margin-right: 5px;
+    border-radius: 50px;
+    white-space: nowrap;
+    /* width: 60px; */
+}
+
+.main .container .proyects h3 {
+    font-size: 1rem;
+}
+
+.card-proyect {
+    margin-bottom: 40px;
+}
+
+.card-proyect .title-card {
+    font-size: 1rem;
+    color: var(--text-color-1);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-proyect .description-card {
+    font-size: 1rem;
+    color: var(--text-color-2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-proyect ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.card-proyect ul li {
+    padding-right: 20px;
+    color: var(--text-color-4);
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: #122B39;
+    padding: 8px 10px;
+    margin-right: 5px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.card-proyect img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.proyects .view-proyects a {
+    color: var(--text-color-1);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.proyects .view-proyects a i{
+    padding-left: 10px;
+}
+
+/* For desktops (min width 640px) */
+@media only screen and (min-width: 640px) {
+    .header .container h1 {
+        font-size: 3rem;
+        margin-bottom: 0px;
+        line-height: 1.75rem;
+    }
+
+    .header .container h2 {
+        line-height: 1.75rem;
+        font-size: 1.25rem;
+        margin-top: 20px;
+    }
+
+    .header .container ul {
+        margin-top: 32px;
+    }
+
+    .card-experience {
+        display: flex;
+        gap: 40px;
+    }
+
+    .card-experience .date-card {
+        width: 80px;
+    }
+
+    .card-proyect {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .card-proyect .card-group1 {
+        flex-grow: 3;
+    }
+
+    .card-proyect .card-group2 {
+        flex-grow: 1;
+    }
+
+    .card-proyect .card-group2 img {
+        margin-top: 16px;
+        width: 120px;
+    }
+}
+
+/* For desktops (min width 768px) */
+@media only screen and (min-width: 768px) {
+    .header {
+        padding-top: 0.3rem;
+    }
+
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content .header {
+        width: 50%;
+        position: fixed;
+    }
+
+    .content .main {
+        position: absolute;
+        width: 50%;
+        right: 0;
+    }
+
+    .header .container .nav {
+        display: contents;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70vh;
+    }
+
+    .header .container p {
+        /* border: 1px solid red; */
+        width: 250px;
+    }
+
+    .nav {
+        width: 200px;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .nav ul {
+        margin-top: 70px !important;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0px;
+        /* margin-left: 80px; */
+    }
+
+
+    .nav ul li {
+        margin-bottom: 20px;
+        /* margin-left: 80px; */
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: var(--text-color-3) !important;
+        font-weight: 700 !important;
+        font-style: normal !important;
+        font-size: .75rem !important;
+        letter-spacing: .1em;
+        text-decoration: none !important;
+        position: relative !important;
+        margin-left: 60px;
+        transition: color 0.5s ease, font-weight 0.5s ease !important; /* Añadido */
+    }
+
+    .nav ul li a::before {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35px;
+        height: 2px;
+        background-color: var(--text-color-3);
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        transition: opacity 0.5s ease;
+    }
+
+    /* .nav ul li a:hover::before, */
+    .nav ul li a.active::before {
+        background-color: var(--text-color-1);
+        color: var(--text-color-1) !important;
+        /* transition: none;*/
+        left: -90px;
+        width: 75px;
+    }
+
+    .nav ul li a.active {
+        /* border: 1px solid red; */
+        color: var(--text-color-1) !important;
+        right:  -20px !important;
+        margin-left: 60px !important;
+        left: 40px;
+        width: 65px;
+    }
+
+    .header{
+        padding-left: 20%;
+    }
+    .header .container {
+        width: 500px;
+    }
+    .main{
+        padding-right: 00%;
+    }
+    .main .container{
+        width: 500px;
+    }
+
+    .cursor-halo {
+        position: fixed !important;
+        width: 50% !important; /* Tamaño del halo */
+        height: 100% !important;
+        border-radius: 50% !important;
+        background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 80%) !important;
+        pointer-events: none !important; /* Hace que el halo no bloquee la interacción con otros elementos */
+        transform: translate(-50%, -50%) !important; /* Centra el halo en el cursor */
+        transition: transform 0.05s ease-out !important; /* Suaviza el movimiento */
+    }
+
+    .main .container .about h3 {
+        padding-top: 16px;
+    }
+
+    .main .container .experience h3 {
+        padding-top: 16px;
+    }
+
+    .main .container .proyects h3 {
+        padding-top: 16px;
+    }
+    
+
+}
