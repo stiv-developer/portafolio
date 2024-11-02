@@ -72,29 +72,31 @@ table tr .year {
     font-weight: 400;
 }
 
+table tr .title-link a {
+    color: var(--text-color-1);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: left;
+    padding-right: 5px;
+}
+
 table tr .tools-th,
+table tr .title,
+table tr .proyect-th,
 table tr .link-th,
 table tr .tools,
 table tr .link {
     display: none;
 }
 
-.cursor-halo {
-    position: fixed !important;
-    width: 50% !important; /* Tamaño del halo */
-    height: 100% !important;
-    border-radius: 50% !important;
-    background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 80%) !important;
-    pointer-events: none !important; /* Hace que el halo no bloquee la interacción con otros elementos */
-    transform: translate(-50%, -50%) !important; /* Centra el halo en el cursor */
-    transition: transform 0.05s ease-out !important; /* Suaviza el movimiento */
-}
 
 @media only screen and (min-width: 640px) {
 
     table tr .link-th,
     table tr .link {
-        display:table-cell;
+        display: table-cell;
 
     }
 
@@ -102,18 +104,28 @@ table tr .link {
         color: var(--text-color-3);
         font-weight: 400;
     }
-    
-    .link a{
+
+    .link a {
         color: var(--text-color-2);
         text-decoration: none;
     }
 
-    .link a:hover{
+    .link a:hover {
         color: #5EEAD4;
     }
 
     .link a i {
         padding-left: 5px;
+    }
+
+    table tr .title,
+    table tr .proyect-th {
+        display: table-cell;
+    }
+
+    table tr .proyect-link-th,
+    table tr .title-link {
+        display: none;
     }
 }
 
@@ -124,7 +136,7 @@ table tr .link {
         display: table-cell;
     }
 
-    .container{
+    .container {
         padding-top: 6rem;
         padding-bottom: 6rem;
         padding-left: 6rem !important;
@@ -134,7 +146,7 @@ table tr .link {
         margin-right: auto;
     }
 
-    .tools ul{
+    .tools ul {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
@@ -151,8 +163,25 @@ table tr .link {
         white-space: nowrap;
         margin-right: 5px;
     }
-    h2{
+
+    h2 {
         font-size: 3rem;
         margin-top: 0;
     }
+
+    .cursor-halo {
+        position: fixed !important;
+        width: 50% !important;
+        /* Tamaño del halo */
+        height: 100% !important;
+        border-radius: 50% !important;
+        background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 80%) !important;
+        pointer-events: none !important;
+        /* Hace que el halo no bloquee la interacción con otros elementos */
+        transform: translate(-50%, -50%) !important;
+        /* Centra el halo en el cursor */
+        transition: transform 0.05s ease-out !important;
+        /* Suaviza el movimiento */
+    }
+
 }
